@@ -1,0 +1,75 @@
+.update-profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background-color: rgba(26, 25, 25, 0.76);
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+}
+
+.update-profile-form h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.update-profile-form form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.update-profile-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.update-profile-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update-profile-form button:hover {
+    background-color: #0056b3;
+}
+
+.update-profile-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.update-profile-form a:hover {
+    text-decoration: underline;
+}
+  .update-profile-form .delete-profile-btn{
+    width: 400px;
+    padding: 10px;
+    background-color: #9f5e5e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.update-profile-form .delete-profile-btn:hover{
+    background-color: #af0303;
+    text-decoration: none;
+}
+.settings-header{
+    margin-bottom: 20px;
+    border-bottom: solid 1px rgba(24, 24, 27, 0.17);
+}

@@ -1,0 +1,137 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.header img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.header-links .link {
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 8px 12px;
+}
+.header-links .link.active {
+    color: #007bff;
+    font-weight: 700;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 6px;
+}
+
+.header-links .link:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+
+.header-links .search {
+    margin: 0 20px;
+}
+
+
+.user-menu {
+    position: relative;
+}
+
+
+.username-button {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.username-button:hover {
+    background: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu button,
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 15px;
+    color: #333333;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu button:hover,
+.dropdown-menu a:hover {
+    background: #f8f9fa;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .header-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
+
+.message {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+.message p {
+    color: white;
+    margin: 3px;
+    font-size: 18px;
+}

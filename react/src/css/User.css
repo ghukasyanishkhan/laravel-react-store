@@ -1,0 +1,65 @@
+.user-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ .user-header {
+    margin-bottom: 20px;
+    border-bottom: solid 1px rgba(24, 24, 27, 0.17);
+}
+
+.user-container .user-info {
+    margin-bottom: 20px;
+    border-bottom: solid 1px rgba(24, 24, 27, 0.17);
+}
+
+.user-container .user-name, .user-email {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-container .user-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-container .item-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.user-container .item-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-container .item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.user-container .item-details {
+    padding: 15px;
+}
+
+.user-container .item-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-container .item-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.user-container .item-views {
+    font-size: 14px;
+    color: #777;
+}
